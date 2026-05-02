@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO_URL = 'repo link'
+        GIT_REPO_URL = 'https://github.com/volarevin/cicd'
         GIT_CREDENTIALS_ID = 'github-pat'
         GIT_BRANCH = 'main'
     }
@@ -92,3 +92,4 @@ except Exception as e:
     sys.exit(1)
 finally:
     driver.quit()
+
